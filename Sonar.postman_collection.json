@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "9cd48b55-5214-47ea-a58e-f3e0aafde66b",
+		"name": "Sonar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.90.232:9000/api/authentication/login?login=admin&password=admin",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"90",
+						"232"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"authentication",
+						"login"
+					],
+					"query": [
+						{
+							"key": "login",
+							"value": "admin"
+						},
+						{
+							"key": "password",
+							"value": "admin"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Token Search",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.90.232:9000/api/user_tokens/search",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"90",
+						"232"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"user_tokens",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Issue Search",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.90.232:9000/api/issues/search?components=SonarAdapter&types=SECURITY_HOTSPOT&createdAfter=2019-09-23T23:01:56-0700",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"90",
+						"232"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"issues",
+						"search"
+					],
+					"query": [
+						{
+							"key": "components",
+							"value": "SonarAdapter"
+						},
+						{
+							"key": "types",
+							"value": "SECURITY_HOTSPOT"
+						},
+						{
+							"key": "createdAfter",
+							"value": "2019-09-23T23:01:56-0700"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Projects",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.90.232:9000/api/projects/search",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"90",
+						"232"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"projects",
+						"search"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,157 @@
+{
+	"displayName": "sonar adapter",
+	"type": "sonar",
+	"logo": "sonar.png",
+	"logoSmall": "sonar_small.png",
+	"metadata": [
+		{
+			"name": "project",
+			"values": [
+				{
+					"id": "SonarAdapter",
+					"name": "ConnectALL Custom SonarQube Adapter"
+				}
+			],
+			"dependent": false,
+			"dependentMetadata": ""
+		},
+		{
+			"name": "Type",
+			"values": [
+				{
+					"id": "CODE_SMELL",
+					"name": "CODE SMELL"
+				},
+				{
+					"id": "BUG",
+					"name": "Bug"
+				},
+				{
+					"id": "VULNERABILITY",
+					"name": "VULNERABILITY"
+				},
+				{
+					"id": "SECURITY_HOTSPOT",
+					"name": "SECURITY HOTSPOT"
+				}
+			],
+			"dependent": true,
+			"dependentMetadata": ""
+		}
+	],
+	"fields": [
+		{
+			"id": "key",
+			"datatype": "String",
+			"required": true,
+			"name": "Key"
+		},
+		{
+			"id": "summary",
+			"datatype": "String",
+			"required": true,
+			"name": "Summary"
+		},
+		{
+			"id": "rule",
+			"datatype": "String",
+			"name": "rule"
+		},
+		{
+			"id": "component",
+			"datatype": "String",
+			"name": "component"
+		},
+		{
+			"id": "line",
+			"datatype": "Number",
+			"name": "Source Line #"
+		},
+		{
+			"id": "hash",
+			"datatype": "String",
+			"name": "hash"
+		},
+		{
+			"id": "textrange",
+			"datatype": "String",
+			"name": "Source Text Range"
+		},
+		{
+			"id": "flows",
+			"datatype": "String",
+			"name": "flows"
+		},
+		{
+			"id": "status",
+			"datatype": "String",
+			"name": "status"
+		},
+		{
+			"id": "message",
+			"datatype": "String",
+			"name": "message"
+		},
+		{
+			"id": "author",
+			"datatype": "String",
+			"name": "author"
+		},
+		{
+			"id": "tags",
+			"datatype": "String",
+			"name": "tags"
+		},
+		{
+			"id": "transitions",
+			"datatype": "String",
+			"name": "transitions"
+		},
+		{
+			"id": "actions",
+			"datatype": "String",
+			"name": "actions"
+		},
+		{
+			"id": "creationDate",
+			"datatype": "String",
+			"name": "Creation Date"
+		},
+		{
+			"id": "organization",
+			"datatype": "String",
+			"name": "organization"
+		},
+		{
+			"id": "fromHotSpot",
+			"datatype": "String",
+			"name": "From HotSpot"
+		},
+		{
+			"id": "type",
+			"datatype": "String",
+			"name": "type"
+		},
+		{
+			"id": "updateDate",
+			"datatype": "String",
+			"name": "Update Date"
+		}
+	],
+	"loginOptions": [],
+	"idFieldName": "key",
+	"titleFieldName": "Summary",
+	"projectFieldName": "",
+	"artifactFieldName": "Type",
+	"testStepsFieldName": "",
+	"changedDateFieldName": "updateDate",
+	"dateFormat": "yyyy-MM-dd",
+	"dateTimeFormat": "yyyy-MM-dd'T'HH:mm:ssZ",
+	"isISO8601DateFormat": "false",
+	"commentFieldName": "",
+	"commentFieldId": "",
+	"attachmentFieldName": "",
+	"attachmentFieldId": "",
+	"apiVersion": "1",
+	"applicationType": "remote"
+}
