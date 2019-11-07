@@ -1,0 +1,1 @@
+# connectall-sonar-adapter
