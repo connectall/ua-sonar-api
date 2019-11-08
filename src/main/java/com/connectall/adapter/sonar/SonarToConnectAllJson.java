@@ -48,7 +48,8 @@ public class SonarToConnectAllJson {
 //					if (fields.has("field_value_name")) {
 //						fieldValue = field.getString("field_value_name");
 //					}
-					fields.put("Summary",  record.getString("component") + " has a problem with " + record.getJSONArray("tags").getString(1));
+					String tags = record.getJSONArray("tags").length() > 1? ("with " + record.getJSONArray("tags").getString(1)) : "";
+					fields.put("Summary",  record.getString("component") + " has a problem " + tags);
 					if ("key".equals(fieldName)) {
 						fieldName = "id";
 						fieldValue = fieldValue.replaceAll("_", ""); // bug found in CA 2.9.7 build with the new connection code
