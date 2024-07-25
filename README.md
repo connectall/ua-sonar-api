@@ -1,4 +1,4 @@
-# connectall-sonar-adapter
+# ua-sonar-api
 
 This repository contains the source and binaries for a basic adapter that allows synchronization with the Sonat Qube product, and any other applications that ConnectAll integrates with.
 
